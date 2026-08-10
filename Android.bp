@@ -4,6 +4,8 @@
 
 soong_namespace {
 	imports: [
+                "device/xiaomi/spes",
+                "hardware/qcom-caf/sm8250",
 	],
 }
 
@@ -1210,23 +1212,23 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-	name: "audio.primary.bengal",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/audio.primary.bengal.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
+//cc_prebuilt_library_shared {
+//	name: "audio.primary.bengal",
+//	owner: "xiaomi",
+//	strip: {
+//		none: true,
+//	},
+//	target: {
+//		android_arm: {
+//			srcs: ["proprietary/vendor/lib/hw/audio.primary.bengal.so"],
+//		},
+//	},
+//	compile_multilib: "32",
+//	check_elf_files: false,
+//	relative_install_path: "hw",
+//	prefer: true,
+//	soc_specific: true,
+//}
 
 cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.bluetooth_audio@2.0-impl",
@@ -1621,22 +1623,22 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-	name: "liba2dpoffload",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/liba2dpoffload.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
+//cc_prebuilt_library_shared {
+//	name: "liba2dpoffload",
+//	owner: "xiaomi",
+//	strip: {
+//		none: true,
+//	},
+//	target: {
+//		android_arm: {
+//			srcs: ["proprietary/vendor/lib/liba2dpoffload.so"],
+//		},
+//	},
+//	compile_multilib: "32",
+//	check_elf_files: false,
+//	prefer: true,
+//	soc_specific: true,
+//}
 
 cc_prebuilt_library_shared {
 	name: "libacdb-fts",
@@ -9435,39 +9437,39 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-	name: "vendor.xiaomi.hardware.mfidoca@1.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
+//cc_prebuilt_library_shared {
+//	name: "vendor.xiaomi.hardware.mfidoca@1.0",
+//	owner: "xiaomi",
+//	strip: {
+//		none: true,
+//	},
+//	target: {
+//		android_arm64: {
+//			srcs: ["proprietary/vendor/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so"],
+//		},
+//	},
+//	compile_multilib: "64",
+//	check_elf_files: false,
+//	prefer: true,
+//	soc_specific: true,
+//}
 
-cc_prebuilt_library_shared {
-	name: "vendor.xiaomi.hardware.mtdservice@1.3",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.3.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
+//cc_prebuilt_library_shared {
+//	name: "vendor.xiaomi.hardware.mtdservice@1.3",
+//	owner: "xiaomi",
+//	strip: {
+//		none: true,
+//	},
+//	target: {
+//		android_arm64: {
+//			srcs: ["proprietary/vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.3.so"],
+//		},
+//	},
+//	compile_multilib: "64",
+//	check_elf_files: false,
+//	prefer: true,
+//	soc_specific: true,
+//}
 
 prebuilt_rfsa {
 	name: "capi_v2_aptX_CLHDADV_Encoder",
