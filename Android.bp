@@ -10168,12 +10168,12 @@ dex_import {
 	system_ext_specific: true,
 }
 
-dex_import {
-	name: "qti-telephony-common",
-	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
-	system_ext_specific: true,
-}
+//dex_import {
+//	name: "qti-telephony-common",
+//	owner: "xiaomi",
+//	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
+//	system_ext_specific: true,
+//}
 
 dex_import {
 	name: "vendor.qti.hardware.alarm-V1.0-java",
